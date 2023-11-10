@@ -1,0 +1,1045 @@
+/*Configuração de cores*/
+
+html {
+
+}
+
+:root {
+  --cor1: rgb(50, 63, 67);
+  --cor2: rgba(113, 216, 245, 1);
+  --cor3: rgba(217, 217, 217, 0.5);
+  --cor4: rgba(255, 255, 255, 1);
+  --cor5: rgb(214, 206, 206);
+  --cor6: rgb(0, 0, 0);
+  --cor7: rgb(57, 120, 136)
+}
+
+
+/* configuração dos navegadores */
+* {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Formatação body */
+
+body {
+  height: 100%;
+  background-color: var(--cor1);
+  transition: 0.6s;
+}
+
+.input {
+  display: none;
+}
+
+/* Header */
+
+header {
+  height: auto;
+  margin: auto;
+
+}
+
+.navbar {
+  display: contents;
+  justify-content: space-between;
+  padding-top: 90px;
+  padding-right: 30px;
+}
+
+.container-header {
+  display: flex;
+  justify-content:space-between;
+  padding: 30px;
+  padding-bottom: 80px;
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: space-between;
+  color: var(--cor2);
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 1px;
+  padding-left: 20px;
+}
+
+.nav{
+  display: flex;
+  justify-content:space-between ;
+  padding-right: 30px;
+  
+}
+
+.nav a {
+  color: var(--cor4);
+  margin: 20px;
+}
+
+.li-mini li{
+  margin-top: 10px;
+  margin-bottom: -30px;
+  
+}
+
+.li-mini li a {
+  margin: 25%;
+}
+
+.nav a:hover {
+  color: var(--cor2);
+}
+/*-------------------------dropdown------------------------*/
+
+.nav li {
+  position: relative;
+  float: left;
+  padding-right: 5px;
+  
+}
+
+.nav li a {
+  color: var(--cor4); 
+  text-decoration: none;
+  padding: 0px;
+  padding-right: 0px;
+  display: block;
+}
+
+
+.nav li ul {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: none;
+  
+}
+
+.nav li:hover ul, .menu li.over ul {
+  display: block;
+}
+
+.nav li ul li{
+  border:none;
+  display:block;
+  width:70px;
+  }
+
+/*-------------------------- MainIndex ----------------------------*/
+
+
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.conteudo {
+  display: block;
+  justify-content: space-between;
+  padding-top: 200px;
+  padding-left: 150px;
+
+}
+
+.imagem_1 {
+  display: flex;
+  justify-content:space-between;
+}
+
+.img_portfolio{
+width: 720px;
+height: 750px;
+padding-right: 100px;
+
+mask-image: linear-gradient(to top left, transparent 10%, black 100%);
+}
+
+.ola {
+  color: var(--cor2);
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+.dev {
+  color: var(--cor4);
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+p {
+  color: var(--cor4);
+}
+
+/* ----------------------------------------- Sobre Laura -----------------------------------*/
+.primeiro {
+  display: flex;
+  justify-content: center;
+  flex-wrap: row wrap;
+}
+
+.umpoucosobre {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.foto_2 img{
+  width: 400px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.textosobre {
+  display: flex;
+  justify-content: center;
+  color: var(--cor4);
+  padding-bottom: 70px;
+  padding-top: 70px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
+}
+
+.segundo {
+  position: relative;
+  padding: 10px 30px 10px 30px;
+  margin: auto;
+  max-width: 640px;
+}
+
+
+.gallery-wrapper {
+  overflow-x: auto;
+  
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+  
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  text-align: center;
+  color: var(--cor4);
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to left, transparent 0%, white 350%);
+  opacity: 0.1;
+  transition: all 600ms ease-in-out;
+}
+
+.arrow-right {
+
+  left: auto;
+  right: 0;
+  background: linear-gradient(to right, transparent 0%, white 350%);
+  opacity: 0.1;
+  transition: all 600ms ease-in-out;
+
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.item {
+  height: 250px;
+  flex-shrink: 0;
+  opacity: 0.3;
+  transition: all 600ms ease-in-out;
+  
+}
+
+.currentItem {
+  opacity: 1;
+  border: 2px solid;
+  box-shadow: 0 0 10px;
+  
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.gallery-wrapper::-webkit-scrollbar {
+  display: none;
+  
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.gallery-wrapper {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+
+}
+
+
+/*------------------------- Jornada ------------------------ */
+
+.minha_jornada p{
+  color: var(--cor2);
+  font-size: 30px;
+  filter: brightness(1.5);
+  text-align: center;
+  padding: 150px 150px 50px 150px;
+
+
+}
+
+.fluxograma h1 {
+  color: var(--cor2);
+  font-size: 35px;
+  filter: brightness(1.5);
+  padding-right: 24px;
+}
+
+.fluxograma p{
+  color: white;
+  font-size: 30px;
+}
+
+.fluxograma {
+  display: flex;
+  flex-direction: column; /* Alterando a direção para lista vertical */
+  align-items: flex-start; /* Alinhando à esquerda verticalmente */
+  position: relative; /* Para posicionar a linha */
+  padding-left: 300px;
+  padding-top: 490px;
+}
+
+.linha {
+  position: absolute;
+  width: 2px; /* Largura da linha */
+  background-color:  var(--cor2); /* Amarelo */
+  top: 135px; /* Afasta a linha igualmente de cima e de baixo */
+  left: 577px; /* Posição à esquerda da página */
+  height: 75%;
+  margin-left: 0px;
+}
+
+.item_jornada {
+  display: flex;
+  align-items: center;
+  height: 250px;
+  margin: 20px 0; /* Espaço entre os itens */
+  text-align: left; /* Alinha o texto à esquerda */
+  position: relative; /* Para posicionar o círculo */
+  top: -400px;
+
+}
+
+.circulo {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #00eeff; /* Verde */
+  border-radius: 50%;
+  margin-right: 30px; /* Espaço entre o círculo e o texto */
+  margin-left: 50px;
+  text-align: right;
+}
+/*----------- Habilidades ---------------*/
+
+.containerhabilidades {
+  padding-top: 20px;
+  padding-bottom: 200px;
+  width: 50%;
+  height: 400px;
+  border-radius: 50px;
+  margin-top: 120px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.nome {
+  width: 40%;
+  height: 30px;
+  float: left;
+  border-radius: 30px;
+}
+
+.valor {
+
+  width: 70%;
+  height: 30px;
+  background-color: var(--cor3);
+  float: right;
+  border-radius: 30px;
+  padding-right: 60px;
+}
+
+.nome_centralizado {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 18%;
+  padding-top: 20%;
+}
+
+.valor_estilo {
+  background-color: var(--cor3);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  padding-left: 20px;
+  padding-right: 70px;
+  border-radius: 30px;
+}
+
+.valor_estilo_HTML p {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.valor_estilo_CSS p {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.valor_estilo_JS p {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.valor_estilo_BT p {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.valor_estilo_React p {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.valor_estilo_UXUI p {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+
+.valor_estilo_HTML{
+  width: 80%;
+  background-color: #56b2b9;
+  border-radius: 30px;
+  padding-right: 60px;
+  height: 30px;
+}
+
+.valor_estilo_CSS{
+  width: 60%;
+  background-color: #56b2b9;
+  border-radius: 30px;
+  padding-right: 60px;
+  height: 30px;
+}
+
+.valor_estilo_JS{
+  width: 50%;
+  background-color: #56b2b9;
+  border-radius: 30px;
+  padding-right: 60px;
+  height: 30px;
+}
+
+.valor_estilo_BT{
+  width: 70%;
+  background-color: #56b2b9; 
+  border-radius: 30px;
+  padding-right: 60px;
+  height: 30px;
+}
+
+.valor_estilo_React{
+  width: 40%;
+  background-color: #56b2b9;
+  border-radius: 30px;
+  padding-right: 60px;
+  height: 30px;
+}
+
+.valor_estilo_UXUI{
+  width: 80%;
+  background-color: #56b2b9;
+  border-radius: 30px;
+  padding-right: 60px;
+  height: 30px;
+}
+
+/* ---------------- Contato ------------- */
+
+
+.container_contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contatos {
+  display: flex; /* Torna os elementos filhos flexíveis */
+  flex-direction: row; /* Alinha os elementos horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.contatos ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 300px;
+  padding-bottom: 200px;
+}
+
+.contatos li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
+  padding-left: 20px; /* Reduzido para evitar que os elementos fiquem muito espaçados */
+}
+
+.contatos a {
+  padding-left: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: var(--cor4);
+}
+
+.imgcontatos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 300px;
+  padding-bottom: 200px;
+}
+
+
+/*---------------- Calculadora --------------*/
+
+
+.calculator {
+  width: 300px;
+  background-color: #464646;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px #00000040;
+  font-family: "Helvetica Neue", sans-serif;
+  overflow: hidden;
+  margin: 150px 70px 100px 570px ;
+}
+
+.result {
+  height: 75px;
+  padding: 20px;
+  text-align: right;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+}
+
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-zero {
+  grid-column: span 2;
+}
+
+.bg-gray {
+  background-color: #585858;
+}
+
+.bg-light-gray {
+  background-color: #747474;
+}
+
+button:active {
+  opacity: 0.9;
+}
+
+.bg-orange {
+  background-color: #f2a43b;
+}
+
+/*--------------- rodapé -------------------*/
+
+.rodape{
+  text-align: center;
+  margin-top: 200px;
+}
+
+
+
+
+/*---------------- Projeto D.I.A ---------------*/
+
+
+.img_dia img{
+width: 400px;
+text-align: center;
+padding-left: 550px;
+
+}
+
+.colunatexto{
+  width: 900px;
+  text-align: center;
+  padding-left: 300px;
+}
+
+.colunatexto p{
+  font-size: 25px;
+  padding-bottom: 200px;
+  }
+
+
+
+/*----------------- Login -------------------*/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.wrap-login {
+  width: 390px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 77px 55px 33px 55px;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.login-form {
+  width: 100%;
+}
+
+.login-form-title {
+  font-family:sans-serif;
+  display: block;
+  font-size: 30px;
+  color: var(--cor4);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.login-form-title img {
+  width: 150px;
+  padding-top: 15px;
+}
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin-bottom: 37px;
+}
+
+.input {
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.2;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  padding: 0 5px;
+  font-family:sans-serif;
+}
+
+.focus-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  color: #adadad;
+  font-family:sans-serif;
+}
+
+.focus-input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  background: rgb(41, 202, 178);
+  background: -webkit-linear-gradient(to left, #21d4fd, rgb(41, 202, 178));
+  background: -o-linear-gradient(to left, #21d4fd, rgb(41, 202, 178));
+  background: -moz-linear-gradient(to left, #21d4fd,rgb(41, 202, 178));
+  background: linear-gradient(to left, #21d4fd, rgb(41, 202, 178));
+}
+
+.focus-input::after {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.2;
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  padding-left: 5px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input:focus {
+  outline: 0;
+}
+
+.input:focus+.focus-input::after {
+  top: -15px;
+}
+
+.input:focus+.focus-input::before {
+  width: 100%;
+}
+
+.has-val+.focus-input::after {
+  top: -15px;
+}
+
+.has-val+.focus-input::before {
+  width: 100%;
+}
+
+.container-login-form-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 13px;
+}
+
+.login-form-btn {
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: rgb(41, 202, 178);
+  background: -webkit-linear-gradient(to left, #21d4fd, rgb(41, 202, 178));
+  background: -o-linear-gradient(to left, #21d4fd, rgb(41, 202, 178));
+  background: -moz-linear-gradient(to left, #21d4fd, rgb(41, 202, 178));
+  background: linear-gradient(to left, #21d4fd, rgb(41, 202, 178));
+}
+
+.login-form-btn:hover {
+  cursor: pointer;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.txt1 {
+  font-size: 14px;
+  color: var(--cor4);
+  line-height: 1.5;
+  padding-right: 5px;
+}
+
+.txt2 {
+  font-size: 14px;
+  color: rgb(41, 202, 178);
+  line-height: 1.5;
+  text-decoration: none;
+}
+/*----------------- Dark Mode ----------------*/
+
+/* Estilize o botão de alternar tema */
+#change-theme {
+  display: none; /* Ocultar o input do checkbox */
+}
+
+/* Estilize a etiqueta do botão de alternar tema */
+label[for="change-theme"] {
+  cursor: pointer;
+}
+
+/* Estilize os ícones do modo claro e escuro */
+.bi-sun,
+.bi-moon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+/* Estilize o botão de ligado/desligado */
+button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-left: 6px;
+}
+
+.darkMode .btndark{
+  color: #080808;
+}
+
+/* Estilize o cabeçalho escuro quando o modo escuro está ativado */
+.darkMode{
+  background-color: rgb(233, 213, 213);
+  color: white;
+}
+
+.darkMode .navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 20px;
+  color: var(--cor6);
+}
+
+.darkMode nav a {
+  color: black;
+}
+
+.darkMode nav a:hover {
+  color: var(--cor4);
+}
+
+.darkMode,
+.darkMode .ola {
+  color: var(--cor6);
+  font-weight: bold;
+}
+
+.darkMode .dev {
+  color: rgb(107, 111, 111);
+}
+
+.darkMode .span {
+  color: var(--cor6);
+}
+
+.darkMode .bi {
+  font-size: 25px;
+  cursor: pointer;
+  color: var(--cor6);
+}
+
+.darkMode .bi-sun {
+  display: none;
+  transition: 0.3s;
+
+}
+
+.darkMode .bi-moon {
+  display: block;
+}
+
+.darkMode .textosobre {
+  color: var(--cor6);
+}
+
+.darkMode .jornada h5 {
+  color: var(--cor7);
+}
+
+.darkMode .jornada p {
+
+  color: var(--cor6);
+
+}
+
+.darkMode .valor {
+  background-color: var(--cor7);
+}
+
+.darkMode .valor_estilo {
+  background-color: var(--cor3);
+  color: var(--cor6);
+}
+
+.darkMode .nome_centralizado p {
+  color: var(--cor6);
+
+}
+
+.darkMode .contatos a {
+  color: var(--cor6);
+
+}
+
+.darkMode .colunatexto h3 {
+  color: var(--cor7);
+}
+
+.darkMode .colunatexto p {
+  color: var(--cor6);
+}
+
+/*------------------ Dark Mode ----------------*/
+
+
+.darkMode .calculator {
+  background-color: #f5b0f5;
+  box-shadow: 0px 4px 4px #de81f3ed;
+}
+
+.darkMode .result {
+  color: #fff;
+}
+
+.darkMode .buttons button {
+  color: #fff;
+  
+}
+
+.darkMode .bg-gray {
+  background-color: #989494;
+}
+
+.darkMode .bg-light-gray {
+  background-color: #beb0b0;
+}
+
+.darkMode .bg-orange {
+  background-color: #bae69c;
+}
+
+.darkMode .linha{
+  background-color: #e2eced;
+}
+
+.darkMode .circulo {
+  border:3px solid #7586c2;
+}
+
+
+.darkMode .h1_jornada{
+  color: rgb(6, 83, 105);
+}
+
+
+.darkMode .p_jornada{
+  color: #57607a;
+}
+
+.darkMode .minha_jornada p{
+  color:rgb(6, 83, 105);
+}
+
+.darkMode .p_footer{
+  color: #080808;
+}
+
+.darkMode .wrap-login {
+  background-color: rgb(236, 238, 240);
+}
+
+.darkMode .focus-input{
+color: var(--cor4);
+}
+
+.darkMode .txt1{
+  color: orange;
+}
+
+.darkMode .txt2 {
+  color: rgb(35, 101, 171);
+}
+
+.darkMode .focus-input::after{
+  color:rgb(35, 101, 171) ;
+}
+
+
+
+.darkMode .wrap-input{
+  border-bottom:2px solid rgb(180, 208, 239) ;
+}
+
+.darkMode .login-form-btn{
+  background: rgb(227, 141, 43, 0.938);
+  background: -webkit-linear-gradient(to left, rgb(240, 234, 225), rgba(242, 136, 23, 0.938));
+  background: -o-linear-gradient(to left, rgb(240, 234, 225),  rgba(242, 136, 23, 0.938));
+  background: -moz-linear-gradient(to left, rgb(240, 234, 225), rgba(242, 136, 23, 0.938));
+  background: linear-gradient(to left, rgb(240, 234, 225),  rgba(242, 136, 23, 0.9388));
+  
+}
+
+.darkMode .focus-input::before{
+  background: rgb(227, 141, 43, 0.938);
+  background: -webkit-linear-gradient(to left, rgb(35, 101, 171), rgb(227, 141, 43, 0.938));
+  background: -o-linear-gradient(to left, rgb(35, 101, 171), rgb(227, 141, 43, 0.938));
+  background: -moz-linear-gradient(to left, rgb(35, 101, 171),rgb(227, 141, 43, 0.938));
+  background: linear-gradient(to left, rgb(35, 101, 171), rgb(227, 141, 43, 0.938));
+}
+
+.darkMode .login-form-title{
+  color: rgb(35, 101, 171);
+}
+
+.darkMode .input{
+color: #080808;
+
+}
+
+.darkMode .colunatexto p{
+
+  color: purple;
+}
